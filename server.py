@@ -4,7 +4,7 @@ from mcp.server.fastmcp import FastMCP
 import requests
 import os
 
-mcp = FastMCP("server")
+mcp = FastMCP("server", host="0.0.0.0", port=8000)
 
 class FormResponse(BaseModel):
     email: str = Field(description="Email")
